@@ -1,6 +1,6 @@
 <?php 
     try {
-        $dbh = new PDO('mysql:host=localhost;dbname=tp', "fedi", "root");
+        $dbh = new PDO('mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq");
         $sth = $dbh->prepare("
         SELECT  * 
         FROM employee  
