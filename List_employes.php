@@ -1,6 +1,6 @@
 <?php 
     try {
-        $dbh = new PDO('mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq);
+        $dbh = new PDO('mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq");
         foreach($dbh->query('SELECT * from employee') as $row) {
             $tab[] = $row ;
         }
