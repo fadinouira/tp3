@@ -30,7 +30,7 @@ if (isset($_POST['add'])) {
   
 	if (($e1 == $e2) AND ($e2 == $e3) AND ($e3 == $e4) AND ($e4 == $e5) AND ($e5 ==  "")) {
 		try {
-			$dbh = new PDO('mysql:host=localhost;dbname=tp', "fedi", "root");
+			$dbh = new PDO(mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq");
 			$sth = $dbh->prepare('INSERT INTO employee (id, name, prename, DN, DA)
 			VALUES (:id, :name, :prename,:bd,:ad);') ;
 			$sth->bindValue(':id', $id);
@@ -63,7 +63,7 @@ if (isset($_POST['add'])) {
 	$bd =  $_POST['bd2'];
 	$ad = $_POST['ad2'];
 
-		$dbh = new PDO('mysql:host=localhost;dbname=tp', "fedi", "root");
+		$dbh = new PDO(mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq");
 
 
 	if (!empty($id)) {
@@ -104,7 +104,7 @@ if (isset($_POST['delete'])) {
 	$id = $_POST['id3'];
 	
 
-		$dbh = new PDO('mysql:host=localhost;dbname=tp', "fedi", "root");
+		$dbh = new PDO(mysql:host=sql7.freesqldatabase.com:3306;dbname=sql7375302', "sql7375302", "aPQiISPgqq");
 		
 
 	if (!empty($id)) {
